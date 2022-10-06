@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Student student1 = new Student();
-        Student student2 = new Student("anna", 17, 5.0, true);
+        Student student2 = new Student("anna", 17, 6.0, true);
         Student student3 = new Student("inna");
         Student student4 = new Student(student2);
 

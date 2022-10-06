@@ -9,6 +9,7 @@ public class Student {
 // defailt constructor
     // если не добавим конструктор сами, то JVM сама создаст пустой дефолтный конструктор с обнуленными значениями
     // String = null, int = 0, double = 0.0, boolean = false
+// ЕСЛИ В КЛАССЕ ОПИСАН ХОТЬ ОДИН КОНСТРУКТОР, ТО ДеФОЛТНЫЙ КОНСТРУКТОР ПРИ КОМПИЛЯЦИИ НЕ СОЗДАЕТСЯ!!!
     public Student(){
         name = "no name";
         age = 16;
@@ -23,6 +24,22 @@ public class Student {
         alive = al;
 
     }
+// Затемнение параметров (имя поля и параметр передаваемый в конструктор объекта)
+//    public Student ( String name, int age, double mark, boolean alive) {
+//        name = name;
+//        age = age;
+//        mark = mark;
+//        alive = alive;
+//
+    // Затемнение параметров не происходит, this - указание на свойство объекта (в нашем случае на имя поля)
+ /*  public Student ( String name, int age, double mark, boolean alive) {
+        this.name = name;
+        this.age = age;
+        this.mark = mark;
+        this.alive = alive;
+
+   }*/
+
     // constructor with parameters (one object condition)
     public Student (String n) {
         name = n;
